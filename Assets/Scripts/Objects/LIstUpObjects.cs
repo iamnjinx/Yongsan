@@ -8,7 +8,7 @@ public class ListUpObjects : MonoBehaviour
     [SerializeField] ObjectDB objectDB;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         int i = 0;
         foreach(Transform tr in transform){

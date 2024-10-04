@@ -28,7 +28,7 @@ public class FollowPlayerSight : MonoBehaviour
 
     public void resetPosition(){
         float d = Vector3.Distance(cameraTransform.position, transform.position);
-        Debug.Log(d);
+        //Debug.Log(d);
         if (!isCentered || d > distance)
         {
             // Find the position we need to be at
