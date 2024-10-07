@@ -7,10 +7,13 @@ public class bldgui : MonoBehaviour
 {
     Transform uiTransform;
 
+    CanvasGroup canvasGroup;
+
     float targetSize;
 
     private void Awake() {
         uiTransform = transform.GetChild(0);
+        canvasGroup = GetComponent<CanvasGroup>();
         targetSize = uiTransform.localScale.x;
     }
 
@@ -20,10 +23,10 @@ public class bldgui : MonoBehaviour
 
     public void changeUiSize(bool _is){
         if(_is){
-            uiTransform.DOScale(new Vector3(targetSize, targetSize, targetSize), .5f);
+            canvasGroup.DOFade(1, .5f);
         }
         else{
-            uiTransform.DOScale(Vector3.zero, .5f);
+            canvasGroup.DOFade(0, .5f);
         }
     }
 }

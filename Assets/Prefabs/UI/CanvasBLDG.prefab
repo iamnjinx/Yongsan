@@ -246,7 +246,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7330825027357909992}
   m_HandleRect: {fileID: 6499621075776332010}
   m_Direction: 2
-  m_Value: 0.9999793
+  m_Value: 1.0000069
   m_Size: 0.9295387
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -696,6 +696,7 @@ GameObject:
   - component: {fileID: 3355026047370427210}
   - component: {fileID: 2858592625323994703}
   - component: {fileID: 2475299649112207245}
+  - component: {fileID: 5797482081790665039}
   m_Layer: 5
   m_Name: CanvasBLDG
   m_TagString: BuildingUI
@@ -817,6 +818,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c219890a1f3fd4fc694bdd9ddf3e4a72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!225 &5797482081790665039
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8869342005838707172}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8973033755309667148
 GameObject:
   m_ObjectHideFlags: 0

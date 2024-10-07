@@ -18,5 +18,9 @@ public class ObjectDescription : MonoBehaviour
     private void Update() {
         Vector3 tempVect = new Vector3(transform.position.x, pLAYERMOVEMENT.HmdTransform.position.y - 5, transform.position.z);
         transform.position = tempVect;
+        // foreach(Transform t in transform){
+        //     float dist = Vector3.Distance(t.position, Camera.main.transform.position);
+        //     t.localScale = Vector3.one * (10-dist);
+        // }
     }
 }

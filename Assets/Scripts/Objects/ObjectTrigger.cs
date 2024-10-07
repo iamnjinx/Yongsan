@@ -41,6 +41,7 @@ public class ObjectTrigger : MonoBehaviour
     private void OnTriggerExit(Collider other) {
         if(other.CompareTag("Player")) {
             objectController.ShowObjectButton(false);
+            particleObj.SetActive(false);
         }
     }
     private void OnTriggerStay(Collider other) {

@@ -13,6 +13,6 @@ public class MakeCanvas : MonoBehaviour
         ObjectController objectController = tempCanvas.GetComponent<ObjectController>();
         objectController.objectDBEntity = GetComponent<ObjectData>().objectDBEntity;
         objectController.GiveData();
-        tempCanvas.GetComponent<LookAtPlayer>().objSize = transform.GetChild(0).GetComponent<ObjSize>().size;
+        //tempCanvas.GetComponent<LookAtPlayer>().objSize = transform.GetChild(0).GetComponent<ObjSize>().size;
     }
 }

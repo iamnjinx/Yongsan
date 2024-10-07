@@ -24,6 +24,11 @@ public class tutorialScene : MonoBehaviour
         tutCoroutine = StartCoroutine(tut());
     }
 
+    private void Update()
+    {
+        CanvasNarration.transform.LookAt(Camera.main.transform.position);
+    }
+
     IEnumerator tut(){
         PLAYERMOVEMENT.CAN_MOVE = false;
         SkipButton.interactable = false;
@@ -35,7 +40,7 @@ public class tutorialScene : MonoBehaviour
         SkipButton.interactable = true;
 
         CanvasNarration.GetComponent<CanvasGroup>().DOFade(1f, 0.5f);
-        yield return new WaitForSeconds(0f);
+        yield return new WaitForSeconds(0.5f);
 
         audioSource.Play();
 

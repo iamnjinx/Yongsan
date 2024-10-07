@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class LookAtPlayer : MonoBehaviour
 {
     private Transform playerTransform;
 
     public float objSize;
+
 
     private void Awake() {
         Camera camera = Camera.main;
@@ -34,6 +34,5 @@ public class LookAtPlayer : MonoBehaviour
     {
         Vector3 targetPos = new Vector3(playerTransform.position.x, transform.position.y, playerTransform.position.z);
         transform.LookAt(targetPos, Vector3.up);
-        
     }
 }

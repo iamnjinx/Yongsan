@@ -10,7 +10,7 @@ public class minimapPin : MonoBehaviour
     public int id;
 
     private void Awake() {
-        minimap = transform.parent.GetComponent<Minimap>();
+        minimap = transform.parent.parent.GetComponent<Minimap>();
         childObj = transform.GetChild(0).gameObject;
     }
 
