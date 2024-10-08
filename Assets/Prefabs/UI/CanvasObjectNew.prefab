@@ -863,7 +863,7 @@ GameObject:
   - component: {fileID: 1431940193524548388}
   - component: {fileID: 8799219348678020189}
   - component: {fileID: 8337313452711542936}
-  - component: {fileID: 7630002673753465200}
+  - component: {fileID: 7255720686350648615}
   m_Layer: 13
   m_Name: Description
   m_TagString: ObjectDescription
@@ -932,18 +932,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7630002673753465200
-MonoBehaviour:
+--- !u!225 &7255720686350648615
+CanvasGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5105496749916725161}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b9f4e4f4faabc7478a6c672334a565e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &5565833243533334460
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,7 +1032,7 @@ GameObject:
   - component: {fileID: 5574186984328277154}
   - component: {fileID: 5530977521973768398}
   - component: {fileID: 5180341910020928127}
-  - component: {fileID: 3570556953057706347}
+  - component: {fileID: 8888620591635416452}
   m_Layer: 13
   m_Name: NameTag
   m_TagString: ObjectTag
@@ -1199,18 +1199,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &3570556953057706347
-MonoBehaviour:
+--- !u!225 &8888620591635416452
+CanvasGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5841812113032788292}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b9f4e4f4faabc7478a6c672334a565e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &6153879110716351596
 GameObject:
   m_ObjectHideFlags: 0
@@ -1666,10 +1666,9 @@ GameObject:
   - component: {fileID: 5943879762211943879}
   - component: {fileID: 1709646429477237205}
   - component: {fileID: 3310691308548030656}
-  - component: {fileID: 1623882273769518222}
+  - component: {fileID: 5127168714174340488}
   - component: {fileID: 2830464299701480672}
   - component: {fileID: 7130632796999918059}
-  - component: {fileID: 5127168714174340488}
   - component: {fileID: 920581551533019937}
   - component: {fileID: 7615309453108023800}
   - component: {fileID: 4610297701773105731}
@@ -1747,23 +1746,27 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 0
---- !u!114 &1623882273769518222
-MonoBehaviour:
+--- !u!135 &5127168714174340488
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8802112997083706970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 0
-  m_BlockingObjects: 0
-  m_BlockingMask:
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 100
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2830464299701480672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1776,8 +1779,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1442b8d83ed94cc09d8ae8d311acba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectTag: {fileID: 5841812113032788292}
-  ObjectDescription: {fileID: 5105496749916725161}
+  ObjectTag: {fileID: 8888620591635416452}
+  ObjectDescription: {fileID: 7255720686350648615}
   objectDBEntity:
     ProjectName: 
     Nickname: 
@@ -1801,27 +1804,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
---- !u!135 &5127168714174340488
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8802112997083706970}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 100
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &920581551533019937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1870,7 +1852,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0

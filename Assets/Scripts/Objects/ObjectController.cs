@@ -3,32 +3,36 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 public class ObjectController : MonoBehaviour
 {
     private Canvas canvas;
 
-    [SerializeField] private GameObject ObjectTag;
-    [SerializeField] private GameObject ObjectDescription;
+    [SerializeField] private CanvasGroup ObjectTag;
+    [SerializeField] private CanvasGroup ObjectDescription;
 
     public ObjectDBEntity objectDBEntity;
+    private ObjectTrigger objectTrigger;
 
     private void Awake() {
         canvas = GetComponent<Canvas>();
         canvas.worldCamera = Camera.main;
+        objectTrigger = GetComponent<ObjectTrigger>();
         //objectDBEntity = transform.parent.GetComponent<ObjectData>().objectDBEntity;
     }
 
     private void Start() {
-        //GiveData();
-
-        ObjectTag.SetActive(false);
-        ObjectDescription.SetActive(false);
     }
 
     public void ShowObjectButton(bool is_in){
-        ObjectTag.SetActive(is_in);
-        if(!is_in) ObjectDescription.SetActive(is_in);
+        if(is_in){
+            ObjectTagChange(true);
+        }
+        else{
+            ObjectTagChange(false);
+            ObjectDiscChange(false);
+        }
     }
 
     public void GiveData(){
@@ -41,13 +45,37 @@ public class ObjectController : MonoBehaviour
     }
 
     public void ObjectTagClicked(){
-        ObjectTag.SetActive(false);
-        ObjectDescription.SetActive(true);
-        GetComponent<ObjectTrigger>().buttonHover(false);
+        ObjectTagChange(false);
+        ObjectDiscChange(true);
+        objectTrigger.buttonHover(false);
     }
 
     public void ExitButtonClicked(){
-        ObjectTag.SetActive(true);
-        ObjectDescription.SetActive(false);
+        ObjectTagChange(true);
+        ObjectDiscChange(false);
     }
+
+    private void ObjectTagChange(bool _is){
+        if(_is){
+            ObjectTag.DOFade(1, .25f);
+        }
+        else{
+            ObjectTag.DOFade(0, .25f);
+        }
+        ObjectTag.interactable = _is;
+        ObjectTag.blocksRaycasts = _is;
+    }
+
+    private void ObjectDiscChange(bool _is){
+        if(_is){
+            ObjectDescription.DOFade(1, .25f);
+        }
+        else{
+            ObjectDescription.DOFade(0, .25f);
+        }
+        ObjectDescription.interactable = _is;
+        ObjectDescription.blocksRaycasts = _is;
+    }
+
+
 }

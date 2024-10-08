@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class minimap_tp : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class minimap_tp : MonoBehaviour
     public Transform player;
     public Transform cameraRot;
 
-    [SerializeField] private Image Fade;
+    [SerializeField] private CanvasGroup Fade;
     [SerializeField] private GameObject mapCanvas;
 
     private void Start() {
@@ -22,19 +23,13 @@ public class minimap_tp : MonoBehaviour
         PLAYERMOVEMENT.CAN_MOVE = false;
         mapCanvas.SetActive(false);
         Fade.gameObject.SetActive(true);
-        for(float i = 0; i <= 255; i+=2f){
-            Fade.color = new Color(0,0,0,Math.Clamp(i/255, 0, 1));
-            yield return new WaitForSeconds(Time.deltaTime/10);
-        }
-        yield return new WaitForSeconds(1f);
+        Fade.DOFade(0, 0.5f);
+        yield return new WaitForSeconds(0.5f);
         player.position = tp_positions[id].position;
         //cameraRot.parent.RotateAround(new Vector3(cameraRot.position.x, 0, cameraRot.position.z), Vector3.up, tp_positions[id].rotation.eulerAngles.y);
         PLAYERMOVEMENT.CAN_MOVE = true;
         yield return new WaitForSeconds(1f);
-        for(float i = 255; i > 0; i-=2f){
-            Fade.color = new Color(0,0,0,Math.Clamp(i/255, 0, 1));
-            yield return new WaitForSeconds(Time.deltaTime/10);
-        }
+        Fade.DOFade(1, 0.5f);
         Fade.gameObject.SetActive(false);
     }
 

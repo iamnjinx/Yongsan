@@ -80,8 +80,8 @@ public class tutorialScene : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         CanvasTitle.SetActive(false);
         CanvasTitle2.SetActive(true);
-        CanvasTitle2.GetComponent<CanvasGroup>().DOFade(1f, 3f);
-        yield return new WaitForSeconds(3f);
+        CanvasTitle2.GetComponent<CanvasGroup>().DOFade(1f, 2f);
+        yield return new WaitForSeconds(1f);
         NextButton.interactable = true;
     }
 
@@ -97,7 +97,7 @@ public class tutorialScene : MonoBehaviour
         PLAYERMOVEMENT.CAN_MOVE = true;
         for(float i = 0.01f; i > 0; i -= Time.deltaTime){
             RenderSettings.fogDensity = i;
-            Debug.Log(i);
+            //Debug.Log(i);
             yield return new WaitForSeconds(0.01f);
         }
         RenderSettings.fogDensity = 0;
