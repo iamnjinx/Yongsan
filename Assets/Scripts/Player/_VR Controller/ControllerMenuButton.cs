@@ -17,6 +17,12 @@ public class ControllerMenuButton : MonoBehaviour
     private float _creditValue;
     private bool is_credit = false;
 
+    [Header("Narration")]
+    public InputActionReference NarrationInputActionReference;
+    [SerializeField] GameObject narration;
+    private float _NarValue;
+    private bool is_Nar = false;
+
 
     private void Start() {
         if(minimap != null) minimap.SetActive(false);
@@ -26,13 +32,18 @@ public class ControllerMenuButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(minimap != null && PLAYERMOVEMENT.CAN_MOVE){
+        if(!PLAYERMOVEMENT.CAN_MOVE) return;
+        
+        if(minimap != null){
             OpenMap();
-            OpenCredit();
+            //OpenCredit();
         }
-        if(credit != null && PLAYERMOVEMENT.CAN_MOVE){
+        if(credit != null){
             OpenCredit();
-            OpenMap();
+            //OpenMap();
+        }
+        if(narration != null){
+            OpenNar();
         }
     }
 
@@ -65,6 +76,21 @@ public class ControllerMenuButton : MonoBehaviour
         }
         else if(_creditValue <= 0 && is_credit){
             is_credit = false;
+        }
+    }
+
+    private void OpenNar(){
+        _NarValue = NarrationInputActionReference.action.ReadValue<float>();
+        if(_NarValue > 0 && !is_Nar){
+            if(narration.activeSelf) narration.SetActive(false);
+            else{
+                narration.SetActive(true);
+            }
+
+            is_Nar = true;
+        }
+        else if(_NarValue <= 0 && is_Nar){
+            is_Nar = false;
         }
     }
 }

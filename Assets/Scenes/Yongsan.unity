@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.69411767, g: 0.83137256, b: 0.7372549, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.61022377, g: 0.6419723, b: 0.8029235, a: 1}
+  m_IndirectSpecularColor: {r: 0.61051345, g: 0.64279926, b: 0.8037162, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -949,17 +949,17 @@ PrefabInstance:
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3428814817176165507, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -975,6 +975,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751562593453400506, guid: e55f4286a6bc84e3eb0202079118fd6e,
+        type: 3}
+      propertyPath: m_text
+      value: Military Armory
       objectReference: {fileID: 0}
     - target: {fileID: 4379429361906869376, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -995,12 +1000,12 @@ PrefabInstance:
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -2508,17 +2513,17 @@ PrefabInstance:
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3428814817176165507, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -2534,6 +2539,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751562593453400506, guid: e55f4286a6bc84e3eb0202079118fd6e,
+        type: 3}
+      propertyPath: m_text
+      value: Dunji Mountain Summit
       objectReference: {fileID: 0}
     - target: {fileID: 4379429361906869376, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -2554,12 +2564,12 @@ PrefabInstance:
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -3620,7 +3630,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 04a7d08ae9e954280a14f6e57e981e03, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4246,7 +4256,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 04a7d08ae9e954280a14f6e57e981e03, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5508,17 +5518,17 @@ PrefabInstance:
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3428814817176165507, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -5534,6 +5544,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751562593453400506, guid: e55f4286a6bc84e3eb0202079118fd6e,
+        type: 3}
+      propertyPath: m_text
+      value: Yongsan Family Park
       objectReference: {fileID: 0}
     - target: {fileID: 3926001625219759110, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -5581,17 +5596,17 @@ PrefabInstance:
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.07046133
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6784035255567310737, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -5752,6 +5767,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CanvasBLDG
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869342005838707172, guid: e55f4286a6bc84e3eb0202079118fd6e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8869342005838707172, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -9939,6 +9959,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 3355347637814333256, guid: 528b09e4aa52a0544ae9b30aa491ff06,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3355347637814333260, guid: 528b09e4aa52a0544ae9b30aa491ff06,
         type: 3}
       propertyPath: m_Pivot.x
@@ -10141,7 +10166,11 @@ PrefabInstance:
         type: 3}
       insertIndex: 2
       addedObject: {fileID: 8522042662666852448}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3355347637814333256, guid: 528b09e4aa52a0544ae9b30aa491ff06,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 926837569}
   m_SourcePrefab: {fileID: 100100000, guid: 528b09e4aa52a0544ae9b30aa491ff06, type: 3}
 --- !u!224 &926837567 stripped
 RectTransform:
@@ -10149,6 +10178,24 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 926837566}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &926837568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3355347637814333256, guid: 528b09e4aa52a0544ae9b30aa491ff06,
+    type: 3}
+  m_PrefabInstance: {fileID: 926837566}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &926837569
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926837568}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &934069955
 GameObject:
   m_ObjectHideFlags: 0
@@ -16157,7 +16204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!225 &1035713539
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -17291,27 +17338,32 @@ PrefabInstance:
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -17
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751562593453400506, guid: e55f4286a6bc84e3eb0202079118fd6e,
+        type: 3}
+      propertyPath: m_text
+      value: 'ROK-US Combined Forces Command '
       objectReference: {fileID: 0}
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -19428,6 +19480,9 @@ MonoBehaviour:
   CreditInputActionReference: {fileID: -741714813604181634, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   credit: {fileID: 1351809648}
+  NarrationInputActionReference: {fileID: -7444880847788734064, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  narration: {fileID: 579103246}
 --- !u!1 &1379109305
 GameObject:
   m_ObjectHideFlags: 0
@@ -20835,17 +20890,17 @@ PrefabInstance:
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3428814817176165507, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -20861,6 +20916,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751562593453400506, guid: e55f4286a6bc84e3eb0202079118fd6e,
+        type: 3}
+      propertyPath: m_text
+      value: South Post Bunker
       objectReference: {fileID: 0}
     - target: {fileID: 4379429361906869376, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -20885,12 +20945,12 @@ PrefabInstance:
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -21219,7 +21279,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c617491be330a4aa2b28eddadaad476f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -21467,7 +21527,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 04a7d08ae9e954280a14f6e57e981e03, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -23558,17 +23618,17 @@ PrefabInstance:
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3428814817176165507, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -23584,6 +23644,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751562593453400506, guid: e55f4286a6bc84e3eb0202079118fd6e,
+        type: 3}
+      propertyPath: m_text
+      value: Mangchocheon Stream
       objectReference: {fileID: 0}
     - target: {fileID: 4379429361906869376, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -23608,12 +23673,12 @@ PrefabInstance:
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -24529,7 +24594,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1846338862}
   - component: {fileID: 1846338863}
-  - component: {fileID: 1846338864}
   m_Layer: 0
   m_Name: Start
   m_TagString: Untagged
@@ -24580,24 +24644,8 @@ MonoBehaviour:
   - {fileID: 585884007}
   - {fileID: 1394482826}
   border: {fileID: 1415475961}
+  leftHand: {fileID: 926837569}
   audioSource: {fileID: 523885946}
---- !u!114 &1846338864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846338861}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IsGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: 1503a30cef8644a3f8fcb10d09fd6a53, type: 2}
 --- !u!1 &1850860890
 GameObject:
   m_ObjectHideFlags: 0
@@ -25055,7 +25103,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1897406557
 Transform:
   m_ObjectHideFlags: 0
@@ -26387,7 +26435,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 04a7d08ae9e954280a14f6e57e981e03, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -27497,17 +27545,17 @@ PrefabInstance:
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2936176883056784131, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3428814817176165507, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -27523,6 +27571,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751562593453400506, guid: e55f4286a6bc84e3eb0202079118fd6e,
+        type: 3}
+      propertyPath: m_text
+      value: Yongsan Prison Site
       objectReference: {fileID: 0}
     - target: {fileID: 4379429361906869376, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -27544,12 +27597,12 @@ PrefabInstance:
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6499621075776332010, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}
@@ -27675,6 +27728,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Value
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8325065275410339193, guid: e55f4286a6bc84e3eb0202079118fd6e,
+        type: 3}
+      propertyPath: m_text
+      value: Yongsan Prison Site
       objectReference: {fileID: 0}
     - target: {fileID: 8869342005838707172, guid: e55f4286a6bc84e3eb0202079118fd6e,
         type: 3}

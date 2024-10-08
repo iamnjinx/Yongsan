@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class cloudNarration : MonoBehaviour
 {
-    private AudioSource audio;
+    private AudioSource _audio;
 
     private float maxDist = 0;
 
     private void Start() {
-        audio = GetComponent<AudioSource>();
+        _audio = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other) {
         if(other.CompareTag("Player")){
-            audio.Play();
+            _audio.Play();
             maxDist = Vector3.Distance(other.transform.position, transform.position);
         }
     }
@@ -27,7 +27,7 @@ public class cloudNarration : MonoBehaviour
 
     private void OnTriggerExit(Collider other) {
         if(other.CompareTag("Player")){
-            audio.Stop();
+            _audio.Stop();
         }
     }
 
@@ -35,6 +35,6 @@ public class cloudNarration : MonoBehaviour
 
         float volumeD = 1 - Vector3.Distance(target.position,transform.position)/maxDist;
 
-        audio.volume = volumeD;
+        _audio.volume = volumeD;
     }
 }

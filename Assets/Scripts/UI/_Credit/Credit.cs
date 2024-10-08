@@ -20,6 +20,10 @@ public class Credit : MonoBehaviour
     public GameObject prevButton;
     public GameObject QuitButton;
 
+    private void Update() {
+        transform.LookAt(Camera.main.transform.position);
+    }
+
     public void OpenCreditWindow(){
         curCreditId = 0;
         CreditChanged();

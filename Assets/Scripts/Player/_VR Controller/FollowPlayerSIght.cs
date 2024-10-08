@@ -53,7 +53,7 @@ public class FollowPlayerSight : MonoBehaviour
     private void MoveTowards(Vector3 targetPosition)
     {
         transform.position += (targetPosition - transform.position) * 0.025f;
-        transform.LookAt(cameraTransform);
+        //transform.LookAt(cameraTransform);
     }
 
     private bool ReachedPosition(Vector3 targetPosition)

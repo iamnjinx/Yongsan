@@ -21,6 +21,10 @@ public class Minimap : MonoBehaviour
         //Debug.Log(curSize);
     }
 
+    private void Update() {
+        transform.LookAt(Camera.main.transform.position);
+    }
+
     public void hovered_pin(int id){
         for (int i = 0; i < pins.Count; i++){
             if(id == i) raiseSize(true, pins[i]);

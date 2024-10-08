@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
-using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +15,7 @@ public class tutorialScene : MonoBehaviour
 
     public GameObject border;
 
+    public CanvasGroup leftHand;
 
     public AudioSource audioSource;
 
@@ -101,5 +101,6 @@ public class tutorialScene : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
         RenderSettings.fogDensity = 0;
+        leftHand.DOFade(1, 0.5f);
     }
 }
