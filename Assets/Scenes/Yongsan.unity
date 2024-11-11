@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.61022377, g: 0.6419723, b: 0.8029235, a: 1}
+  m_IndirectSpecularColor: {r: 0.61003596, g: 0.6420418, b: 0.8024175, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -140,7 +140,7 @@ PrefabInstance:
     - target: {fileID: 8322184120283085319, guid: f12add524fbff654fbcc11c4fe09a5d4,
         type: 3}
       propertyPath: m_Name
-      value: Envoy
+      value: q
       objectReference: {fileID: 0}
     - target: {fileID: 8322184120283085370, guid: f12add524fbff654fbcc11c4fe09a5d4,
         type: 3}
@@ -165,7 +165,7 @@ PrefabInstance:
     - target: {fileID: 8322184120283085370, guid: f12add524fbff654fbcc11c4fe09a5d4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 28.1
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 8322184120283085370, guid: f12add524fbff654fbcc11c4fe09a5d4,
         type: 3}
@@ -1828,7 +1828,7 @@ PrefabInstance:
     - target: {fileID: 1429577155610520352, guid: 870e5ceda574b2b4ebcbc6c52a946545,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 27.5
+      value: 26.41
       objectReference: {fileID: 0}
     - target: {fileID: 1429577155610520352, guid: 870e5ceda574b2b4ebcbc6c52a946545,
         type: 3}
@@ -8172,6 +8172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraTransform: {fileID: 0}
   distance: 10
+  followSpeed: 10
   isCentered: 0
 --- !u!1 &765138012
 GameObject:
@@ -8633,7 +8634,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bb0ce519c0a746f40b47dde3d94362b3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7e896df81c63156498ac328ef88d9882, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9859,6 +9860,12 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 3355347637109837233, guid: 528b09e4aa52a0544ae9b30aa491ff06,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7d3644c14723c9c46849098ab9c273f7,
+        type: 3}
     - target: {fileID: 3355347637306295675, guid: 528b09e4aa52a0544ae9b30aa491ff06,
         type: 3}
       propertyPath: m_Layer
@@ -9949,6 +9956,12 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 3355347637800875940, guid: 528b09e4aa52a0544ae9b30aa491ff06,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 14ba1efcecee263429325df47371ccec,
+        type: 3}
     - target: {fileID: 3355347637814333256, guid: 528b09e4aa52a0544ae9b30aa491ff06,
         type: 3}
       propertyPath: m_Name
@@ -10192,7 +10205,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926837568}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -10705,7 +10718,7 @@ PrefabInstance:
     - target: {fileID: 7940604134894513655, guid: 0a1cc25debccead499ca9f5dc6075471,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 26.099998
+      value: 26.63
       objectReference: {fileID: 0}
     - target: {fileID: 7940604134894513655, guid: 0a1cc25debccead499ca9f5dc6075471,
         type: 3}
@@ -20604,12 +20617,12 @@ PrefabInstance:
     - target: {fileID: 7940604134894513655, guid: 0a1cc25debccead499ca9f5dc6075471,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 294.6
+      value: 281.91562
       objectReference: {fileID: 0}
     - target: {fileID: 7940604134894513655, guid: 0a1cc25debccead499ca9f5dc6075471,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 38.9
+      value: 31.48556
       objectReference: {fileID: 0}
     - target: {fileID: 7940604134894513655, guid: 0a1cc25debccead499ca9f5dc6075471,
         type: 3}
@@ -20619,27 +20632,27 @@ PrefabInstance:
     - target: {fileID: 7940604134894513655, guid: 0a1cc25debccead499ca9f5dc6075471,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.68946946
+      value: 0.7061408
       objectReference: {fileID: 0}
     - target: {fileID: 7940604134894513655, guid: 0a1cc25debccead499ca9f5dc6075471,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.68946946
+      value: -0.7061408
       objectReference: {fileID: 0}
     - target: {fileID: 7940604134894513655, guid: 0a1cc25debccead499ca9f5dc6075471,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.1569453
+      value: 0.03694804
       objectReference: {fileID: 0}
     - target: {fileID: 7940604134894513655, guid: 0a1cc25debccead499ca9f5dc6075471,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.1569453
+      value: -0.03694806
       objectReference: {fileID: 0}
     - target: {fileID: 7940604134894513655, guid: 0a1cc25debccead499ca9f5dc6075471,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -64.352
+      value: -84.01
       objectReference: {fileID: 0}
     - target: {fileID: 7940604134894513655, guid: 0a1cc25debccead499ca9f5dc6075471,
         type: 3}
@@ -21151,7 +21164,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3e99ba26a396b1146a4f0b507f6e730e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 77e9a66fe25d8c64a938724e3f9cae6b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

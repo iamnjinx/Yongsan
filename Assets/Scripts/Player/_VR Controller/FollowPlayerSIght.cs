@@ -8,6 +8,7 @@ public class FollowPlayerSight : MonoBehaviour
 
     float yPos;
     [SerializeField] private float distance = 3.0f;
+    [SerializeField] private float followSpeed = 5f;
 
     public bool isCentered = false;
 
@@ -52,7 +53,7 @@ public class FollowPlayerSight : MonoBehaviour
 
     private void MoveTowards(Vector3 targetPosition)
     {
-        transform.position += (targetPosition - transform.position) * 0.025f;
+        transform.position += (targetPosition - transform.position) * Time.deltaTime * followSpeed;
         //transform.LookAt(cameraTransform);
     }
 
