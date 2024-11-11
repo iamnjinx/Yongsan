@@ -361,13 +361,13 @@ MonoBehaviour:
     Nickname: creamT
     Description: The books I referred to when studying and researching about Yongsan
       Park
-  - ProjectName: Sae-woo-Kang(Shirmp Snack)
-    Nickname: creamT
-    Description: I like Sae-woo-kang so I want to take it to Yongsan Park
   - ProjectName: Sneakers
     Nickname: creamT
     Description: I want to have a walk in a spacious park. It would be fun to have
       marathon course and hold a marathon event
+  - ProjectName: Sae-woo-Kang(Shirmp Snack)
+    Nickname: creamT
+    Description: I like Sae-woo-kang so I want to take it to Yongsan Park
   - ProjectName: Yongsan Family Park
     Nickname: creamT
     Description: I enjoy spending time with my family and sometimes by myself, playing
