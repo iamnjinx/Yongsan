@@ -18,7 +18,7 @@ public class ObjectController : MonoBehaviour
     private void Awake() {
         canvas = GetComponent<Canvas>();
         canvas.worldCamera = Camera.main;
-        objectTrigger = GetComponent<ObjectTrigger>();
+        objectTrigger = transform.parent.GetComponent<ObjectTrigger>();
         //objectDBEntity = transform.parent.GetComponent<ObjectData>().objectDBEntity;
     }
 

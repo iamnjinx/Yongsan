@@ -11,7 +11,7 @@ public class MakeCanvas : MonoBehaviour
     private void Start() {
         var tempCanvas = Instantiate(canvasPrefab, transform.GetChild(0).position, Quaternion.identity, Object_UI_Transform);
         ObjectController objectController = tempCanvas.GetComponent<ObjectController>();
-        objectController.objectDBEntity = GetComponent<ObjectData>().objectDBEntity;
+        //objectController.objectDBEntity = GetComponent<ObjectData>().objectDBEntity;
         objectController.GiveData();
         //tempCanvas.GetComponent<LookAtPlayer>().objSize = transform.GetChild(0).GetComponent<ObjSize>().size;
     }

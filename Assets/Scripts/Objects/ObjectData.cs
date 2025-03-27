@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class ObjectData : MonoBehaviour
 {
-    public ObjectDBEntity objectDBEntity;
-
     public ObjectController objectController;
+
+    void Awake()
+    {
+        objectController = transform.GetChild(0).GetChild(0).GetComponent<ObjectController>();
+    }
 }

@@ -8,13 +8,16 @@ public class ListUpObjects : MonoBehaviour
     [SerializeField] ObjectDB objectDB;
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         int i = 0;
         foreach(Transform tr in transform){
             YongsanObjects.Add(tr);
             if(tr.GetComponent<ObjectData>() != null){
-                tr.GetComponent<ObjectData>().objectDBEntity = objectDB.Entities[i];
+                ObjectController objController = tr.GetComponent<ObjectData>().objectController;
+                objController.objectDBEntity = objectDB.Entities[i];
+                objController.GiveData();
+                //objController.transform.gameObject.SetActive(true);
             }
             i++;
         }

@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 11, y: 0.00048828125}
-  m_SizeDelta: {x: -17, y: 0}
+  m_AnchoredPosition: {x: 11, y: 0.000030517578}
+  m_SizeDelta: {x: -17, y: -233.37}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &3068802182154363823
 CanvasRenderer:
@@ -66,15 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Yongsan Family Park, as the central park of Seoul, was previously a military
-    facility used during various historical events, including the Japanese Invasion
-    of Korea (Imjin War), Imo Mutiny, Gapsin Coup, and Russo-Japanese War. In 1992,
-    it was transformed into a park when the Seoul Metropolitan Government acquired
-    the area, which used to be a golf course, and turned it into an open and peaceful
-    space with hills, grassy plazas, and a pond. Located between the Han River and
-    Namsan, the park serves as a focal point of Seoul's green spaces and has artworks
-    by artists representing seven countries (Korea, France, Switzerland, Germany,
-    UK, USA, Canada).
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8951f07d798ac3e4a927905d4124b704, type: 2}
   m_sharedMaterial: {fileID: 5196524617114060079, guid: 8951f07d798ac3e4a927905d4124b704,
@@ -265,7 +257,7 @@ RectTransform:
   m_Father: {fileID: 5503840287806012674}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -342,9 +334,9 @@ RectTransform:
   m_Father: {fileID: 2827841544821987453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &6327889172676432680
 CanvasRenderer:
@@ -690,8 +682,8 @@ RectTransform:
   m_GameObject: {fileID: 4104386238077011417}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3107032011416987862}
   - {fileID: 1431940193524548388}
@@ -1171,7 +1163,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 920581551533019937}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: ObjectTrigger, Assembly-CSharp
           m_MethodName: buttonHover
           m_Mode: 6
@@ -1187,7 +1179,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 920581551533019937}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: ObjectTrigger, Assembly-CSharp
           m_MethodName: buttonHover
           m_Mode: 6
@@ -1649,8 +1641,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5641027639661425082}
   m_HandleRect: {fileID: 8529786113212023202}
   m_Direction: 2
-  m_Value: 0.9999959
-  m_Size: 0.635799
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1669,16 +1661,14 @@ GameObject:
   - component: {fileID: 5127168714174340488}
   - component: {fileID: 2830464299701480672}
   - component: {fileID: 7130632796999918059}
-  - component: {fileID: 920581551533019937}
   - component: {fileID: 7615309453108023800}
-  - component: {fileID: 4610297701773105731}
   m_Layer: 13
   m_Name: CanvasObjectNew
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5943879762211943879
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1745,7 +1735,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!135 &5127168714174340488
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1765,7 +1755,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 100
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2830464299701480672
 MonoBehaviour:
@@ -1804,20 +1794,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
---- !u!114 &920581551533019937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8802112997083706970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02be2d6f79d434dabaa1e17f4b124610, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particleObj: {fileID: 8059082671394528235}
-  uiselect: {fileID: 4610297701773105731}
 --- !u!114 &7615309453108023800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1831,102 +1807,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objSize: 0
---- !u!82 &4610297701773105731
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8802112997083706970}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c46f826b8e1264fafbe6220a5e034b7f, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 100
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1001 &6410721803470441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2050,12 +1930,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a48c38598b9b59b46ba5ef07cffe9f3f, type: 3}
---- !u!1 &8059082671394528235 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8052817088078912898, guid: a48c38598b9b59b46ba5ef07cffe9f3f,
-    type: 3}
-  m_PrefabInstance: {fileID: 6410721803470441}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8943678984507001428 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8937554139059260477, guid: a48c38598b9b59b46ba5ef07cffe9f3f,

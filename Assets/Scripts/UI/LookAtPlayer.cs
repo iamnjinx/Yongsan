@@ -15,6 +15,8 @@ public class LookAtPlayer : MonoBehaviour
         Camera camera = Camera.main;
         GetComponent<Canvas>().worldCamera = camera;
         playerTransform = GameObject.FindWithTag("Player").transform;
+        //objSize = transform.parent.GetComponent<ObjSize>().size;
+        objSize = 1;
     }
 
     private void Start(){

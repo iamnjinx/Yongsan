@@ -6,15 +6,16 @@ public class ObjectTrigger : MonoBehaviour
 {
     private ObjectController objectController;
     private SphereCollider sphereCollider;
-    private LookAtPlayer lookAtPlayer;
+    //private LookAtPlayer lookAtPlayer;
     [SerializeField] private GameObject particleObj;
     [SerializeField] private AudioSource uiselect;
-    private bool is_close = false;
+    //private bool is_close = false;
 
     private void Awake() {
-        objectController = GetComponent<ObjectController>();
+        objectController = transform.GetChild(0).GetComponent<ObjectController>();
+        particleObj = transform.GetChild(0).GetChild(1).gameObject;
         sphereCollider = GetComponent<SphereCollider>();
-        lookAtPlayer = GetComponent<LookAtPlayer>();
+        //lookAtPlayer = GetComponent<LookAtPlayer>();
         sphereCollider.enabled = false;
     }
 
@@ -35,12 +36,14 @@ public class ObjectTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if(other.CompareTag("Player")) {
             //Debug.Log(objectController);
+            //objectController.gameObject.SetActive(true);
             objectController.ShowObjectButton(true);
         }
     }
     private void OnTriggerExit(Collider other) {
         if(other.CompareTag("Player")) {
             objectController.ShowObjectButton(false);
+            //objectController.gameObject.SetActive(false);
             particleObj.SetActive(false);
         }
     }
