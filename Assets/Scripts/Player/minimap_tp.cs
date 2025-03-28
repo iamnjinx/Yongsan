@@ -23,13 +23,13 @@ public class minimap_tp : MonoBehaviour
         PLAYERMOVEMENT.CAN_MOVE = false;
         mapCanvas.SetActive(false);
         Fade.gameObject.SetActive(true);
-        Fade.DOFade(0, 0.5f);
+        Fade.DOFade(1, 0.5f);
         yield return new WaitForSeconds(0.5f);
         player.position = tp_positions[id].position;
         //cameraRot.parent.RotateAround(new Vector3(cameraRot.position.x, 0, cameraRot.position.z), Vector3.up, tp_positions[id].rotation.eulerAngles.y);
         PLAYERMOVEMENT.CAN_MOVE = true;
         yield return new WaitForSeconds(1f);
-        Fade.DOFade(1, 0.5f);
+        Fade.DOFade(0, 0.5f);
         Fade.gameObject.SetActive(false);
     }
 

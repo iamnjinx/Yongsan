@@ -55,6 +55,7 @@ public class FollowPlayerSight : MonoBehaviour
     {
         transform.position += (targetPosition - transform.position) * Time.deltaTime * followSpeed;
         //transform.LookAt(cameraTransform);
+        transform.position = new Vector3(transform.position.x, cameraTransform.position.y, transform.position.z);
     }
 
     private bool ReachedPosition(Vector3 targetPosition)

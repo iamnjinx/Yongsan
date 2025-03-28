@@ -1965,7 +1965,7 @@
                 {
                     "name": "",
                     "id": "47bdae0c-aff5-42a1-b310-7f37e8b34d25",
-                    "path": "*/{PrimaryButton}",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
