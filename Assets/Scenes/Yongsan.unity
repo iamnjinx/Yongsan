@@ -12741,6 +12741,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3355347637814333258, guid: 528b09e4aa52a0544ae9b30aa491ff06,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3355347637814333260, guid: 528b09e4aa52a0544ae9b30aa491ff06,
         type: 3}
       propertyPath: m_Pivot.x
@@ -28871,7 +28876,7 @@ PrefabInstance:
     - target: {fileID: 5809408147876028869, guid: 24b2fa2ed2fc5d9499f2a4dcc2e9bd41,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5849871272946438428, guid: 24b2fa2ed2fc5d9499f2a4dcc2e9bd41,
         type: 3}
